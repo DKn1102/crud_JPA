@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import jakarta.persistence.EntityNotFoundException;
 import java.time.LocalDate;
 
-@SpringBootTest
+@SpringBootTest(classes = com.study.domain.member.MemberRepository.class)
 public class MemberRepositoryTest {
 
     @Autowired
